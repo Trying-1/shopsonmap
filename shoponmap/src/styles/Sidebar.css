@@ -1,0 +1,11 @@
+.side-bar {
+    background-color: tan;
+    position: fixed;
+    left: 5px;
+    width: 23%;
+    top: 10vh;
+    bottom: 5vh;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
