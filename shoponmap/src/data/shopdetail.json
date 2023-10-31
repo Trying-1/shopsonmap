@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "shopname": "SuperMart",
+        "shoptype": "grocery",
+        "shopowner": "John Doe",
+        "opening_time": "08:00 AM",
+        "closing_time": "08:00 PM",
+        "opendays": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "longitude": -73.935242,
+        "latitude": 40.730610,
+        "country": "United States",
+        "city": "New York"
+    },
+    {
+        "id": 2,
+        "shopname": "Fashion Trends",
+        "shoptype": "clothing",
+        "shopowner": "Jane Smith",
+        "opening_time": "10:00 AM",
+        "closing_time": "07:00 PM",
+        "opendays": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ],
+        "longitude": -118.243685,
+        "latitude": 34.052235,
+        "country": "United States",
+        "city": "Los Angeles"
+    },
+    {
+        "id": 3,
+        "shopname": "Furniture World",
+        "shoptype": "furniture",
+        "shopowner": "David Wilson",
+        "opening_time": "09:00 AM",
+        "closing_time": "06:00 PM",
+        "opendays": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "longitude": -0.127625,
+        "latitude": 51.507222,
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    {
+        "id": 4,
+        "shopname": "Stationary Haven",
+        "shoptype": "stationary",
+        "shopowner": "Sarah Brown",
+        "opening_time": "10:00 AM",
+        "closing_time": "07:00 PM",
+        "opendays": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ],
+        "longitude": 2.352222,
+        "latitude": 48.856613,
+        "country": "France",
+        "city": "Paris"
+    },
+    {
+        "id": 5,
+        "shopname": "ElectroGizmo",
+        "shoptype": "electronics",
+        "shopowner": "Michael Johnson",
+        "opening_time": "09:30 AM",
+        "closing_time": "07:30 PM",
+        "opendays": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ],
+        "longitude": 13.404954,
+        "latitude": 52.520008,
+        "country": "Germany",
+        "city": "Berlin"
+    },
+    {
+        "id": 6,
+        "shopname": "FreshGrocers",
+        "shoptype": "grocery",
+        "shopowner": "Emily Anderson",
+        "opening_time": "08:30 AM",
+        "closing_time": "07:30 PM",
+        "opendays": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "longitude": -74.006015,
+        "latitude": 40.712776,
+        "country": "United States",
+        "city": "New York"
+    },
+    {
+        "id": 7,
+        "shopname": "StyleCorner",
+        "shoptype": "clothing",
+        "shopowner": "Oliver Harris",
+        "opening_time": "10:00 AM",
+        "closing_time": "08:00 PM",
+        "opendays": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+        ],
+        "longitude": -0.128889,
+        "latitude": 51.507222,
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    {
+        "id": 8,
+        "shopname": "Furniture Emporium",
+        "shoptype": "furniture",
+        "shopowner": "Sophia Turner",
+        "opening_time": "09:30 AM",
+        "closing_time": "06:30 PM",
+        "opendays": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ],
+        "longitude": 2.352222,
+        "latitude": 48.856613,
+        "country": "France",
+        "city": "Paris"
+    },
+    {
+        "id": 9,
+        "shopname": "Stationary World",
+        "shoptype": "stationary",
+        "shopowner": "Matthew Lee",
+        "opening_time": "10:00 AM",
+        "closing_time": "07:00 PM",
+        "opendays": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ],
+        "longitude": 13.404954,
+        "latitude": 52.520008,
+        "country": "Germany",
+        "city": "Berlin"
+    },
+    {
+        "id": 10,
+        "shopname": "ElectroTech",
+        "shoptype": "electronics",
+        "shopowner": "Linda Martinez",
+        "opening_time": "09:00 AM",
+        "closing_time": "07:30 PM",
+        "opendays": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ],
+        "longitude": -118.243685,
+        "latitude": 34.052235,
+        "country": "United States",
+        "city": "Los Angeles"
+    }
+]

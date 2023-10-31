@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "../styles/Slider.css"
 function PriceRangeSlider() {
   const [currentValue, setCurrentValue] = useState(0);
 
@@ -11,8 +11,9 @@ function PriceRangeSlider() {
   };
 
   return (
-    <div className="price-range-slider">
+    <div className="range-slider">
       <input
+        className='slider'
         type="range"
         id="slider"
         min={5}
@@ -21,9 +22,9 @@ function PriceRangeSlider() {
         value={currentValue}
         onChange={handleSliderChange}
       />
-      <p>Min: {minLabel}</p>
-      <p>Max: {maxLabel}</p>
-      <p>Current: ${currentValue}</p>
+      <p className='min-value slider-values'>{minLabel}</p>
+      <p className='max-value slider-values'>{maxLabel}</p>
+      <p className='current-value slider-values'>${currentValue}</p>
     </div>
   );
 }

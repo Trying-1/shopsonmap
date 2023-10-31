@@ -1,0 +1,42 @@
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #08968f;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #f3c80a;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-values {
+    color: white;
+    text-transform: lowercase;
+    font-size: small;
+}
+
+.min-value {
+    position: absolute;
+    left: 5px;
+}
+
+.max-value {
+    position: absolute;
+    right: 5px;
+}
+
+.current-value {
+    margin: 0;
+    transform: translateX(50%);
+}

@@ -1,21 +1,13 @@
 import "leaflet/dist/leaflet.css"
 import "../styles/Map.css"
+import shopdata from "../data/shopdetail.json"
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
 import { Icon, divIcon } from "leaflet"
 import React from 'react'
 import MarkerClusterGroup from "react-leaflet-cluster"
 
 function Map() {
-    const markers = [
-        {
-            geocode: [26.190036, 91.698543],
-            popup: "Lohit Hostel"
-        },
-        {
-            geocode: [26.191480, 91.699070],
-            popup: "swimming pool"
-        }
-    ]
+    const shops = shopdata;
     const customIcon = new Icon({
         iconUrl: "https://cdn-icons-png.flaticon.com/128/149/149059.png",
         iconSize: [38, 38]
@@ -30,22 +22,30 @@ function Map() {
     }
     return (
         <div className="brs-5 bx-shd map-container">
-            <MapContainer center={[26.190489, 91.702043]} zoom={18}>
+            <MapContainer center={[shops[0].latitude, shops[0].longitude]} zoom={18}>
                 <TileLayer
-                    // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 <MarkerClusterGroup
                     chunkedLoading
                     iconCreateFunction={createCustomClusterIcon}
                 >
-                    {markers.map(marker => (
+                    {shops.map(shop => (
                         <Marker
-                            position={marker.geocode}
+                            position={[shop.latitude, shop.longitude]}
                             icon={customIcon}>
-                            <Popup>
-                                <h4>{marker.popup}</h4>
-                            </Popup>
+                            <div>
+                                <Popup className="custom-popup">
+                                    <div >
+                                        <img className="shop-image" src={shop.image} alt="shopimage"/>
+                                        <h4>{shop.shopname}</h4>
+                                        <h6>{shop.shoptype}</h6>
+                                        <h6>{shop.shopowner}</h6>
+                                        <h6>{shop.opening_time}</h6>
+                                        <h6>{shop.closing_time}</h6>
+                                    </div>
+                                </Popup>
+                            </div>
                         </Marker>
                     ))}
                 </MarkerClusterGroup>

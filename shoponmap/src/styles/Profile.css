@@ -1,0 +1,19 @@
+.profile-picture {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    height: 40px;
+    width: 50px;
+    border-radius: 70px 70px 25px 25px;
+    background-color: gray;
+    z-index: 5;
+    
+}
+
+.username {
+    color: wheat;
+    position: absolute;
+    top: 40px;
+    right: 5px;
+
+}

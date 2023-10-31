@@ -1,5 +1,5 @@
 .side-bar {
-    background-color: tan;
+    background-color: rgba(6, 114, 100,0.2);
     position: fixed;
     left: 5px;
     width: 23%;
@@ -8,4 +8,8 @@
     margin-right: 5px;
     border-radius: 5px;
     padding: 5px;
+    backdrop-filter: blur(5px);
+display: flex;
+flex-direction: column;
+gap: 3rem;
 }
