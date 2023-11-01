@@ -31,18 +31,20 @@ function Map() {
                     iconCreateFunction={createCustomClusterIcon}
                 >
                     {shops.map(shop => (
-                        <Marker
+                        <Marker className="custom-marker"
                             position={[shop.latitude, shop.longitude]}
                             icon={customIcon}>
                             <div>
                                 <Popup className="custom-popup">
                                     <div >
-                                        <img className="shop-image" src={shop.image} alt="shopimage"/>
-                                        <h4>{shop.shopname}</h4>
-                                        <h6>{shop.shoptype}</h6>
-                                        <h6>{shop.shopowner}</h6>
-                                        <h6>{shop.opening_time}</h6>
-                                        <h6>{shop.closing_time}</h6>
+                                        <img className="shop-image" src={shop.image} alt="shopimage" />
+                                        <h4>Name: {shop.shopname}</h4>
+                                        <h6>Type: {shop.shoptype}</h6>
+                                        <h6>Owner: {shop.shopowner}</h6>
+                                        <h6>Opening-time: {shop.opening_time}</h6>
+                                        <h6>Closing-time: {shop.closing_time}</h6>
+                                        <h6>Rating: {shop.rating}</h6>
+                                        <h6>Price-range: {shop.price_range}</h6>
                                     </div>
                                 </Popup>
                             </div>

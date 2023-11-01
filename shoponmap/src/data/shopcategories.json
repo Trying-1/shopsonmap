@@ -1,8 +1,32 @@
 [
-    { "id": 1, "name": "Clothes", "value": "clothes" },
-    { "id": 2, "name": "Furniture", "value": "furniture" },
-    { "id": 3, "name": "Shoes", "value": "shoes" },
-    { "id": 4, "name": "Electronics", "value": "electronics" },
-    { "id": 5, "name": "Stationery", "value": "stationery" }
-  ]
-  
+  {
+    "id": 0,
+    "name": "All",
+    "value": "All"
+  },
+  {
+    "id": 1,
+    "name": "Clothes",
+    "value": "clothes"
+  },
+  {
+    "id": 2,
+    "name": "Furniture",
+    "value": "furniture"
+  },
+  {
+    "id": 3,
+    "name": "Shoes",
+    "value": "shoes"
+  },
+  {
+    "id": 4,
+    "name": "Electronics",
+    "value": "electronics"
+  },
+  {
+    "id": 5,
+    "name": "Stationery",
+    "value": "stationery"
+  }
+]
