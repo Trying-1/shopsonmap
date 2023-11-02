@@ -8,7 +8,7 @@ function CategorySelector(props) {
 
     //creating new state variable which stores the checked item, means those are checked will be stored in checkedItem
     const [checkedItem, setCheckedItem] = useState([]);
-
+    
     // we define how our checkbox should function on change of the checked or unchecked
     const handleCheckBox = (e) => {
         const value = e.target.value;
@@ -21,10 +21,7 @@ function CategorySelector(props) {
     }
     useEffect(() => {
         props.getCheckedItem(checkedItem)
-
-    }, [checkedItem,props])
-
-
+    }, [checkedItem, props])
     return (
         <div>
             {categories.map(category => (
@@ -42,11 +39,6 @@ function CategorySelector(props) {
                     </label>
                 </div>
             ))}
-
-            {/*this is just <p> tag to check that the checked Item are stored in the state variable */}
-            <p>Checked Checkboxes: {checkedItem.join(', ')}</p>
-
-
         </div>
     );
 }
