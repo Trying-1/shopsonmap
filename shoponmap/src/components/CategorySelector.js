@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import shopcategories from "../data/shopcategories.json"
 import "../styles/CategorySelector.css"
 function CategorySelector(props) {
-
+    
     //storing shop categories from the data file. which in this case is shopcategories.json
     const categories = shopcategories;
 
     //creating new state variable which stores the checked item, means those are checked will be stored in checkedItem
     const [checkedItem, setCheckedItem] = useState([]);
-    
+
     // we define how our checkbox should function on change of the checked or unchecked
     const handleCheckBox = (e) => {
         const value = e.target.value;
@@ -26,6 +26,7 @@ function CategorySelector(props) {
         <div>
             {categories.map(category => (
                 <div key={category.id}>
+
                     <input
                         type="checkbox"
                         id={category.value}
