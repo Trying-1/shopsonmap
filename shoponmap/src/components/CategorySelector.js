@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import shopcategories from "../data/shopcategories.json"
 import "../styles/CategorySelector.css"
-function CategorySelector() {
+function CategorySelector(props) {
+
+    //storing shop categories from the data file. which in this case is shopcategories.json
     const categories = shopcategories;
-    const [checkedItem, setCheckedItem] = useState([])
+
+    //creating new state variable which stores the checked item, means those are checked will be stored in checkedItem
+    const [checkedItem, setCheckedItem] = useState([]);
+
+    // we define how our checkbox should function on change of the checked or unchecked
     const handleCheckBox = (e) => {
         const value = e.target.value;
         if (e.target.checked) {
@@ -12,8 +18,13 @@ function CategorySelector() {
         else {
             setCheckedItem(checkedItem.filter(item => item !== value))
         }
-        
     }
+    useEffect(() => {
+        props.getCheckedItem(checkedItem)
+
+    }, [checkedItem,props])
+
+
     return (
         <div>
             {categories.map(category => (
@@ -31,7 +42,10 @@ function CategorySelector() {
                     </label>
                 </div>
             ))}
-            {/* <p>Checked Checkboxes: {checkedItem.join(', ')}</p> */}
+
+            {/*this is just <p> tag to check that the checked Item are stored in the state variable */}
+            <p>Checked Checkboxes: {checkedItem.join(', ')}</p>
+
 
         </div>
     );

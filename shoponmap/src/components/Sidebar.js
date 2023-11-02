@@ -5,10 +5,13 @@ import PriceRangeSlider from './PriceRangeSlider'
 import RatingsSlider from './RatingsSlider'
 import CategorySelector from './CategorySelector'
 function Sidebar() {
+    const getcheckedItemFromsSelector = (data) => {
+        console.log(`data recieved from child to parent${data}`)
+    }
     return (
         <div className='side-bar brs-5 bx-shd'>
             <SearchBar />
-            <CategorySelector/>
+            <CategorySelector getCheckedItem={getcheckedItemFromsSelector} />
             <PriceRangeSlider />
             <RatingsSlider />
 
